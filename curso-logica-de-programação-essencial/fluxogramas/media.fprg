@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Usuario"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-03-31 12:28:13 "/>
+        <attribute name="created" value="VXN1YXJpbztERVNLVE9QLUE5VE9NTDU7MjAyMi0wMy0zMTsiMTI6MjM6MTQgIjsyOTk5"/>
+        <attribute name="edited" value="VXN1YXJpbztERVNLVE9QLUE5VE9NTDU7MjAyMi0wMy0zMTsiMTI6Mjg6MTMgIjsxOzMxMTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nota1" type="Real" array="False" size=""/>
+            <declare name="nota2" type="Real" array="False" size=""/>
+            <declare name="nota3" type="Real" array="False" size=""/>
+            <declare name="nota4" type="Real" array="False" size=""/>
+            <declare name="media" type="Real" array="False" size=""/>
+            <input variable="nota1"/>
+            <input variable="nota2"/>
+            <input variable="nota3"/>
+            <input variable="nota4"/>
+            <assign variable="media" expression="(nota1 + nota2 + nota3 + nota4)/4"/>
+            <if expression="media &gt;= 7">
+                <then>
+                    <output expression="&quot;Voc&#234; foi aprovado!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Voc&#234; foi reprovado&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

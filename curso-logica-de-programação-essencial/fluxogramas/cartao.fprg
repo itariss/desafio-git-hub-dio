@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Usuario"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-03-31 12:23:05 "/>
+        <attribute name="created" value="VXN1YXJpbztERVNLVE9QLUE5VE9NTDU7MjAyMi0wMy0zMTsiMTI6MTI6MDAgIjsyOTky"/>
+        <attribute name="edited" value="VXN1YXJpbztERVNLVE9QLUE5VE9NTDU7MjAyMi0wMy0zMTsiMTI6MjM6MDUgIjsxOzMxMDc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nomeCliente" type="String" array="False" size=""/>
+            <declare name="temCartao" type="Boolean" array="False" size=""/>
+            <declare name="numCartao" type="Integer" array="False" size=""/>
+            <input variable="nomeCliente"/>
+            <input variable="temCartao"/>
+            <if expression="temCartao">
+                <then>
+                    <input variable="numCartao"/>
+                </then>
+                <else>
+                    <output expression="&quot;Infelizmente n&#227;o aceitamos outro tipo de transa&#231;ao.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
